@@ -30,4 +30,70 @@ you have to install Vmwaer from (https://www.vmware.com/products/workstation-pro
 <img width="717" alt="Capture 12" src="https://user-images.githubusercontent.com/86157318/122647627-b9733200-d12d-11eb-89b3-52eb4cbd86fd.PNG">
 ### * click Power on this Virtual Machine
 <img width="719" alt="Capture 13" src="https://user-images.githubusercontent.com/86157318/122647683-1ff85000-d12e-11eb-828d-8a25121fbc92.PNG">
+#### * install Ubuntu
+<img width="958" alt="Capture 14" src="https://user-images.githubusercontent.com/86157318/122680592-a24d4680-d1f8-11eb-88e3-df7fd45d42f1.PNG">
+#### * install 3rd part flash,..ect 
+<img width="958" alt="Capture 16" src="https://user-images.githubusercontent.com/86157318/122680608-b98c3400-d1f8-11eb-840c-bcd9383efcda.PNG">
+#### * Erase
+<img width="929" alt="Capture 17" src="https://user-images.githubusercontent.com/86157318/122680624-cdd03100-d1f8-11eb-9bee-a31a9fb25a45.PNG">
+then 
+
+#### * choose your region Saudi Arabia 
+
+#### * choose your language English 
+
+#### * put you user name & password 
+
+wait for loading 
+
+#### * Restart 
+
+### now the Ubuntu 16.04 is a new OS ready to work
+
+## 3-install ROS
+#### the main target of ROS to link OS with sensors working as node.
+
+first step open Ubuntu 18.04 
+
+then open terminal 
+
+#### CTRL+ALT+T 
+
+then write 
+
+#### *setup your source.list 
+
+`sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
+<img width="589" alt="Capture" src="https://user-images.githubusercontent.com/86157318/122680939-82b71d80-d1fa-11eb-82c9-1f1bca16e8d7.PNG">
+#### *setup your key 
+`curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -'`
+<img width="586" alt="Capture 1" src="https://user-images.githubusercontent.com/86157318/122681028-053fdd00-d1fb-11eb-83ac-d1aebdea5e47.PNG">
+#### * update 
+`sudo apt-get update`
+<img width="586" alt="Capture 2" src="https://user-images.githubusercontent.com/86157318/122681051-2b657d00-d1fb-11eb-91ea-29fe860f2a1f.PNG">
+#### *Full installation 
+`sudo apt install ros-melodic-desktop-full`
+<img width="589" alt="Capture 3" src="https://user-images.githubusercontent.com/86157318/122681094-5c45b200-d1fb-11eb-8618-975448c45b5c.PNG">
+#### *Enviroment setup 
+`echo "source /opt/ros/melodic/setup.zsh" >> ~/.zshrc`
+`source ~/.zshrc`
+<img width="592" alt="Capture 4" src="https://user-images.githubusercontent.com/86157318/122681167-c2cad000-d1fb-11eb-8689-7dd6b22bdd43.PNG">
+#### * Dependencies for building packages
+`sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential`
+<img width="591" alt="Capture 5" src="https://user-images.githubusercontent.com/86157318/122681213-f3ab0500-d1fb-11eb-971d-45cc43653171.PNG">
+#### * Initialize rosdep
+
+`sudo apt install python-rosdep`
+
+`sudo rosdep init`
+
+`rosdep update`
+<img width="508" alt="Capture 6" src="https://user-images.githubusercontent.com/86157318/122681295-3ec51800-d1fc-11eb-9b95-9f6d28d2826d.PNG">
+<img width="579" alt="Capture 7" src="https://user-images.githubusercontent.com/86157318/122681299-44226280-d1fc-11eb-8fcd-5e53b3a9312a.PNG">
+### ROS installation finish 
+
+
+
+
+
 
